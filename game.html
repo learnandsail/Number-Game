@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <section class="main">
+        <div class="mainContainer">
+            <div class="head">
+                <p>
+                    <img src="clock.png" alt="clock" width="60px" height="50px"><span id="time">30</span>
+                </p>
+                <p style="color: rgb(255, 153, 0);">
+                    level <span id="level">1</span>
+                </p>
+                <p>
+                    <img src="pngwing.com.png" alt="heart" width="60px" height="50px"><span id="heart">0</span>
+                </p> 
+                <p>
+                    <img src="score.png" alt="clock" width="60px" height="50px"> <span id="score">0</span>
+                </p>
+                <button id="profile">
+                    <img src="Screenshot 2024-10-22 205437.png" alt="profile" width="60px" height="50px">
+                </button>
+            </div>
+            <div class="question" id="question">
+                <div class="card">
+                    <p id="qns1">00</p>
+                </div>
+                <div class="cardop">
+                    <p id="operation">+</p>
+                </div>
+                <div class="card">
+                    <p id="qns2">00</p>
+                </div>
+                <div class="cardop1">
+                    <p id="operation1">+</p>
+                </div>
+                <div class="card1">
+                    <p id="qns3">00</p>
+                </div>
+            </div>
+            <div class="answer" id="answer">
+                <button class="card" id="first">00</button>
+                <button class="card" id="second">00</button>
+                <button class="card" id="third">00</button>
+                <button class="card" id="fourth">00</button>
+            </div>
+        </div>
+    </section>
+    <div id="overlay">
+        <h1>LEVEL UP+</h1>
+    </div>
+    <div id="overlayGameOver">
+        <h1>GAME OVER</h1>
+        <h2>your final score is <span id="finalScore">0</span></h2>
+        <div class="btnNav">
+            <button id="home">Home</button>
+            <button id="restart">Restart</button>
+        </div>
+    </div>
+    <div id="wonthegame">
+        <h1>
+            YOU WON THE GAME
+        </h1>
+    </div>
+</body>
+<script src="game.js"></script>
+
+</html>

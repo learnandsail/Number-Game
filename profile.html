@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+
+<body>
+    <section class="main">
+        <div class="mainContainer">
+            <div class="head">
+                <button id="return">
+                    < </button>
+                        <button id="logout"><img src="icons8-logout-32.png" alt=""></button>
+            </div>
+            <img src="Screenshot 2024-10-22 205437.png" alt="profile" id="profilepic" width="200px" height="200px">
+            <label for="setprofilepic">update profile photo</label>
+            <input type="file" accept=".jpeg,.png,.jpg" id="setprofilepic">
+            <table>
+                <tr>
+                    <td>Name :</td>
+                    <td style="display: flex; justify-content: space-evenly;">
+                        <p id="playername"></p>
+                        <input type="text" id="newname">
+                        <button id="editplayername">edit</button>
+                        <button id="setplayername">done</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email :</td>
+                    <td id="playeremail">xyz</td>
+                </tr>
+                <tr>
+                    <td>Token :</td>
+                    <td id="token">0</td>
+                </tr>
+                <tr>
+                    <td>High Score :</td>
+                    <td id="hs">0</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+<script src="profile.js"></script>
+
+</html>
